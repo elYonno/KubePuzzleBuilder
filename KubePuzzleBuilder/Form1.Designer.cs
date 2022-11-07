@@ -589,6 +589,9 @@
             this.picture11.Size = new System.Drawing.Size(50, 50);
             this.picture11.TabIndex = 8;
             this.picture11.TabStop = false;
+            this.picture11.Click += new System.EventHandler(this.picture11_Click);
+            this.picture11.DragDrop += new System.Windows.Forms.DragEventHandler(this.picture11_DragDrop);
+            this.picture11.DragEnter += new System.Windows.Forms.DragEventHandler(this.picture11_DragEnter);
             // 
             // label15
             // 
@@ -1423,6 +1426,7 @@
             this.pictureBlank.Size = new System.Drawing.Size(50, 50);
             this.pictureBlank.TabIndex = 18;
             this.pictureBlank.TabStop = false;
+            this.pictureBlank.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBlank_MouseMove);
             // 
             // label1
             // 
@@ -1451,6 +1455,7 @@
             this.pictureStart.Size = new System.Drawing.Size(50, 50);
             this.pictureStart.TabIndex = 23;
             this.pictureStart.TabStop = false;
+            this.pictureStart.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureStart_MouseMove);
             // 
             // label3
             // 
@@ -1470,6 +1475,7 @@
             this.pictureFinish.Size = new System.Drawing.Size(50, 50);
             this.pictureFinish.TabIndex = 25;
             this.pictureFinish.TabStop = false;
+            this.pictureFinish.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureFinish_MouseMove);
             // 
             // label4
             // 
@@ -1489,6 +1495,7 @@
             this.pictureStraight.Size = new System.Drawing.Size(50, 50);
             this.pictureStraight.TabIndex = 27;
             this.pictureStraight.TabStop = false;
+            this.pictureStraight.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureStraight_MouseMove);
             // 
             // label5
             // 
@@ -1508,6 +1515,7 @@
             this.pictureCorner.Size = new System.Drawing.Size(50, 50);
             this.pictureCorner.TabIndex = 29;
             this.pictureCorner.TabStop = false;
+            this.pictureCorner.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureCorner_MouseMove);
             // 
             // Kube
             // 
@@ -1524,12 +1532,12 @@
             this.Controls.Add(this.pictureStart);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBlank);
-            this.Controls.Add(this.face6);
-            this.Controls.Add(this.face5);
-            this.Controls.Add(this.face4);
-            this.Controls.Add(this.face2);
             this.Controls.Add(this.face1);
+            this.Controls.Add(this.face4);
             this.Controls.Add(this.face3);
+            this.Controls.Add(this.face2);
+            this.Controls.Add(this.face5);
+            this.Controls.Add(this.face6);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.Name = "Kube";
