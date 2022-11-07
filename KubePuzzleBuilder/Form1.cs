@@ -81,7 +81,7 @@ namespace KubePuzzleBuilder
 
         }
 
-        // template
+        // --------------------------template--------------------------
         private void pictureBlank_MouseMove(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
@@ -119,8 +119,8 @@ namespace KubePuzzleBuilder
             chosenPictureIndex = 4;
         }
 
-        // tile functions
-        private void onPictureDrag(DragEventArgs e, PictureBox picture, Label label)
+        // --------------------------tile functions--------------------------
+        private void onPictureDrop(DragEventArgs e, PictureBox picture, Label label)
         {
             if (e.Data != null && e.Data.GetDataPresent(DataFormats.Bitmap))
             {
@@ -134,7 +134,7 @@ namespace KubePuzzleBuilder
         private void onPictureClick(EventArgs e, PictureBox picture, Label label)
         {
             MouseEventArgs me = (MouseEventArgs)e;
-            Image bmp = picture.Image;
+            Image bmp = (Image)picture.Image.Clone();
 
             if (me.Button == MouseButtons.Left)
             {
@@ -151,8 +151,7 @@ namespace KubePuzzleBuilder
             picture.Image = bmp;
         }
 
-        // tile events
-        private void picture11_DragEnter(object sender, DragEventArgs e)
+        private void eventDragEnter(DragEventArgs e)
         {
             if (e.Data != null)
                 if (e.Data.GetDataPresent(DataFormats.Bitmap))
@@ -161,14 +160,151 @@ namespace KubePuzzleBuilder
                     e.Effect = DragDropEffects.None;
         }
 
+        // --------------------------tile events--------------------------
+
+        // -------------top-------------
+        // picture 11
+        private void picture11_DragEnter(object sender, DragEventArgs e)
+        {
+            eventDragEnter(e);
+        }
+
         private void picture11_DragDrop(object sender, DragEventArgs e)
         {
-            onPictureDrag(e, picture11, label11);
+            onPictureDrop(e, picture11, label11);
         }
 
         private void picture11_Click(object sender, EventArgs e)
         {
             onPictureClick(e, picture11, label11);
+        }
+
+        // picture12
+        private void picture12_DragEnter(object sender, DragEventArgs e)
+        {
+            eventDragEnter(e);
+        }
+
+        private void picture12_DragDrop(object sender, DragEventArgs e)
+        {
+            onPictureDrop(e, picture12, label12);
+        }
+
+        private void picture12_Click(object sender, EventArgs e)
+        {
+            onPictureClick(e, picture12, label12);
+        }
+
+        // picture13
+        private void picture13_DragEnter(object sender, DragEventArgs e)
+        {
+            eventDragEnter(e);
+        }
+
+        private void picture13_DragDrop(object sender, DragEventArgs e)
+        {
+            onPictureDrop(e, picture13, label13);
+        }
+
+        private void picture13_Click(object sender, EventArgs e)
+        {
+            onPictureClick(e, picture13, label13);
+        }
+
+        // picture14
+        private void picture14_DragEnter(object sender, DragEventArgs e)
+        {
+            eventDragEnter(e);
+        }
+
+        private void picture14_DragDrop(object sender, DragEventArgs e)
+        {
+            onPictureDrop(e, picture14, label14);
+        }
+
+        private void picture14_Click(object sender, EventArgs e)
+        {
+            onPictureClick(e, picture14, label14);
+        }
+
+        // picture15
+        private void picture15_DragEnter(object sender, DragEventArgs e)
+        {
+            eventDragEnter(e);
+        }
+
+        private void picture15_DragDrop(object sender, DragEventArgs e)
+        {
+            onPictureDrop(e, picture15, label15);
+        }
+
+        private void picture15_Click(object sender, EventArgs e)
+        {
+            onPictureClick(e, picture15, label15);
+        }
+
+        // picture16
+        private void picture16_DragEnter(object sender, DragEventArgs e)
+        {
+            eventDragEnter(e);
+        }
+
+        private void picture16_DragDrop(object sender, DragEventArgs e)
+        {
+            onPictureDrop(e, picture16, label16);
+        }
+
+        private void picture16_Click(object sender, EventArgs e)
+        {
+            onPictureClick(e, picture16, label16);
+        }
+
+        // picture17
+        private void picture17_DragEnter(object sender, DragEventArgs e)
+        {
+            eventDragEnter(e);
+        }
+
+        private void picture17_DragDrop(object sender, DragEventArgs e)
+        {
+            onPictureDrop(e, picture17, label17);
+        }
+
+        private void picture17_Click(object sender, EventArgs e)
+        {
+            onPictureClick(e, picture17, label17);
+        }
+
+        // picture18
+        private void picture18_DragEnter(object sender, DragEventArgs e)
+        {
+            eventDragEnter(e);
+        }
+
+        private void picture18_DragDrop(object sender, DragEventArgs e)
+        {
+            onPictureDrop(e, picture18, label18);
+        }
+
+        private void picture18_Click(object sender, EventArgs e)
+        {
+            onPictureClick(e, picture18, label18);
+        }
+
+        // picture19
+        private void picture19_DragEnter(object sender, DragEventArgs e)
+        {
+            eventDragEnter(e);
+        }
+
+        private void picture19_DragDrop(object sender, DragEventArgs e)
+        {
+            onPictureDrop(e, picture19, label19);
+        }
+
+        private void picture19_Click(object sender, EventArgs e)
+        {
+            onPictureClick(e, picture19, label19);
         }
     }
 }

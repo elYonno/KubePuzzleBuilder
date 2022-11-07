@@ -24,8 +24,9 @@ namespace KubePuzzleBuilder
             }
         }
 
-        private Tile getTile(String id)
+        private Tile getTile(String pictureID)
         {
+            String id = pictureID.Substring(pictureID.Length - 2);
             int face = Int32.Parse(id.Substring(0, 1));
             int number = Int32.Parse(id.Substring(1, 1));
             return tiles[face - 1, number - 1];
@@ -33,8 +34,7 @@ namespace KubePuzzleBuilder
 
         public void updateTileImage(String pictureID, int chosenPictureIndex, Label label)
         {
-            String id = pictureID.Substring(pictureID.Length - 2);
-            Tile tile = getTile(id);
+            Tile tile = getTile(pictureID);
             tile.setTileType(chosenPictureIndex);
             tile.resetTileOrientation();
             label.Text = tile.print();
@@ -42,8 +42,7 @@ namespace KubePuzzleBuilder
 
         public void rotateTile(String pictureID, bool clockwise, Label label)
         {
-            String id = pictureID.Substring(pictureID.Length - 2);
-            Tile tile = getTile(id);
+            Tile tile = getTile(pictureID);
             if (clockwise)
                 tile.turnClockwise();
             else

@@ -482,6 +482,9 @@
             this.picture19.Size = new System.Drawing.Size(50, 50);
             this.picture19.TabIndex = 16;
             this.picture19.TabStop = false;
+            this.picture19.Click += new System.EventHandler(this.picture19_Click);
+            this.picture19.DragDrop += new System.Windows.Forms.DragEventHandler(this.picture19_DragDrop);
+            this.picture19.DragEnter += new System.Windows.Forms.DragEventHandler(this.picture19_DragEnter);
             // 
             // picture18
             // 
@@ -492,6 +495,9 @@
             this.picture18.Size = new System.Drawing.Size(50, 50);
             this.picture18.TabIndex = 12;
             this.picture18.TabStop = false;
+            this.picture18.Click += new System.EventHandler(this.picture18_Click);
+            this.picture18.DragDrop += new System.Windows.Forms.DragEventHandler(this.picture18_DragDrop);
+            this.picture18.DragEnter += new System.Windows.Forms.DragEventHandler(this.picture18_DragEnter);
             // 
             // picture16
             // 
@@ -502,6 +508,9 @@
             this.picture16.Size = new System.Drawing.Size(50, 50);
             this.picture16.TabIndex = 4;
             this.picture16.TabStop = false;
+            this.picture16.Click += new System.EventHandler(this.picture16_Click);
+            this.picture16.DragDrop += new System.Windows.Forms.DragEventHandler(this.picture16_DragDrop);
+            this.picture16.DragEnter += new System.Windows.Forms.DragEventHandler(this.picture16_DragEnter);
             // 
             // label17
             // 
@@ -521,6 +530,9 @@
             this.picture13.Size = new System.Drawing.Size(50, 50);
             this.picture13.TabIndex = 10;
             this.picture13.TabStop = false;
+            this.picture13.Click += new System.EventHandler(this.picture13_Click);
+            this.picture13.DragDrop += new System.Windows.Forms.DragEventHandler(this.picture13_DragDrop);
+            this.picture13.DragEnter += new System.Windows.Forms.DragEventHandler(this.picture13_DragEnter);
             // 
             // label18
             // 
@@ -549,6 +561,9 @@
             this.picture17.Size = new System.Drawing.Size(50, 50);
             this.picture17.TabIndex = 14;
             this.picture17.TabStop = false;
+            this.picture17.Click += new System.EventHandler(this.picture17_Click);
+            this.picture17.DragDrop += new System.Windows.Forms.DragEventHandler(this.picture17_DragDrop);
+            this.picture17.DragEnter += new System.Windows.Forms.DragEventHandler(this.picture17_DragEnter);
             // 
             // label14
             // 
@@ -568,6 +583,9 @@
             this.picture12.Size = new System.Drawing.Size(50, 50);
             this.picture12.TabIndex = 6;
             this.picture12.TabStop = false;
+            this.picture12.Click += new System.EventHandler(this.picture12_Click);
+            this.picture12.DragDrop += new System.Windows.Forms.DragEventHandler(this.picture12_DragDrop);
+            this.picture12.DragEnter += new System.Windows.Forms.DragEventHandler(this.picture12_DragEnter);
             // 
             // picture14
             // 
@@ -578,6 +596,9 @@
             this.picture14.Size = new System.Drawing.Size(50, 50);
             this.picture14.TabIndex = 2;
             this.picture14.TabStop = false;
+            this.picture14.Click += new System.EventHandler(this.picture14_Click);
+            this.picture14.DragDrop += new System.Windows.Forms.DragEventHandler(this.picture14_DragDrop);
+            this.picture14.DragEnter += new System.Windows.Forms.DragEventHandler(this.picture14_DragEnter);
             // 
             // picture11
             // 
@@ -620,6 +641,9 @@
             this.picture15.Size = new System.Drawing.Size(50, 50);
             this.picture15.TabIndex = 0;
             this.picture15.TabStop = false;
+            this.picture15.Click += new System.EventHandler(this.picture15_Click);
+            this.picture15.DragDrop += new System.Windows.Forms.DragEventHandler(this.picture15_DragDrop);
+            this.picture15.DragEnter += new System.Windows.Forms.DragEventHandler(this.picture15_DragEnter);
             // 
             // face2
             // 
@@ -1541,7 +1565,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.Name = "Kube";
-            this.Text = "Kube";
+            this.Text = "Kube Puzzle Builder";
             this.Load += new System.EventHandler(this.Kube_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picture35)).EndInit();
             this.face3.ResumeLayout(false);
