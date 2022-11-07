@@ -1,10 +1,15 @@
 namespace KubePuzzleBuilder
 {
-    public partial class Form1 : Form
+    public partial class Kube : Form
     {
-        public Form1()
+        public Kube()
         {
             InitializeComponent();
+        }
+
+        private void Kube_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
