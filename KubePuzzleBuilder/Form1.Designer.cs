@@ -153,6 +153,7 @@
             this.pictureStraight = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureCorner = new System.Windows.Forms.PictureBox();
+            this.btnExport = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picture35)).BeginInit();
             this.face3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picture39)).BeginInit();
@@ -229,6 +230,9 @@
             this.picture35.Size = new System.Drawing.Size(50, 50);
             this.picture35.TabIndex = 0;
             this.picture35.TabStop = false;
+            this.picture35.Click += new System.EventHandler(this.onPictureClick);
+            this.picture35.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture35.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // face3
             // 
@@ -293,6 +297,9 @@
             this.picture39.Size = new System.Drawing.Size(50, 50);
             this.picture39.TabIndex = 16;
             this.picture39.TabStop = false;
+            this.picture39.Click += new System.EventHandler(this.onPictureClick);
+            this.picture39.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture39.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // picture38
             // 
@@ -303,6 +310,9 @@
             this.picture38.Size = new System.Drawing.Size(50, 50);
             this.picture38.TabIndex = 12;
             this.picture38.TabStop = false;
+            this.picture38.Click += new System.EventHandler(this.onPictureClick);
+            this.picture38.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture38.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // picture36
             // 
@@ -313,6 +323,9 @@
             this.picture36.Size = new System.Drawing.Size(50, 50);
             this.picture36.TabIndex = 4;
             this.picture36.TabStop = false;
+            this.picture36.Click += new System.EventHandler(this.onPictureClick);
+            this.picture36.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture36.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // label37
             // 
@@ -332,6 +345,9 @@
             this.picture33.Size = new System.Drawing.Size(50, 50);
             this.picture33.TabIndex = 10;
             this.picture33.TabStop = false;
+            this.picture33.Click += new System.EventHandler(this.onPictureClick);
+            this.picture33.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture33.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // label38
             // 
@@ -360,6 +376,9 @@
             this.picture37.Size = new System.Drawing.Size(50, 50);
             this.picture37.TabIndex = 14;
             this.picture37.TabStop = false;
+            this.picture37.Click += new System.EventHandler(this.onPictureClick);
+            this.picture37.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture37.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // label34
             // 
@@ -379,6 +398,9 @@
             this.picture32.Size = new System.Drawing.Size(50, 50);
             this.picture32.TabIndex = 6;
             this.picture32.TabStop = false;
+            this.picture32.Click += new System.EventHandler(this.onPictureClick);
+            this.picture32.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture32.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // picture34
             // 
@@ -389,6 +411,9 @@
             this.picture34.Size = new System.Drawing.Size(50, 50);
             this.picture34.TabIndex = 2;
             this.picture34.TabStop = false;
+            this.picture34.Click += new System.EventHandler(this.onPictureClick);
+            this.picture34.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture34.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // picture31
             // 
@@ -400,6 +425,9 @@
             this.picture31.Size = new System.Drawing.Size(50, 50);
             this.picture31.TabIndex = 8;
             this.picture31.TabStop = false;
+            this.picture31.Click += new System.EventHandler(this.onPictureClick);
+            this.picture31.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture31.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // label35
             // 
@@ -482,9 +510,9 @@
             this.picture19.Size = new System.Drawing.Size(50, 50);
             this.picture19.TabIndex = 16;
             this.picture19.TabStop = false;
-            this.picture19.Click += new System.EventHandler(this.picture19_Click);
-            this.picture19.DragDrop += new System.Windows.Forms.DragEventHandler(this.picture19_DragDrop);
-            this.picture19.DragEnter += new System.Windows.Forms.DragEventHandler(this.picture19_DragEnter);
+            this.picture19.Click += new System.EventHandler(this.onPictureClick);
+            this.picture19.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture19.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // picture18
             // 
@@ -495,9 +523,9 @@
             this.picture18.Size = new System.Drawing.Size(50, 50);
             this.picture18.TabIndex = 12;
             this.picture18.TabStop = false;
-            this.picture18.Click += new System.EventHandler(this.picture18_Click);
-            this.picture18.DragDrop += new System.Windows.Forms.DragEventHandler(this.picture18_DragDrop);
-            this.picture18.DragEnter += new System.Windows.Forms.DragEventHandler(this.picture18_DragEnter);
+            this.picture18.Click += new System.EventHandler(this.onPictureClick);
+            this.picture18.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture18.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // picture16
             // 
@@ -508,9 +536,9 @@
             this.picture16.Size = new System.Drawing.Size(50, 50);
             this.picture16.TabIndex = 4;
             this.picture16.TabStop = false;
-            this.picture16.Click += new System.EventHandler(this.picture16_Click);
-            this.picture16.DragDrop += new System.Windows.Forms.DragEventHandler(this.picture16_DragDrop);
-            this.picture16.DragEnter += new System.Windows.Forms.DragEventHandler(this.picture16_DragEnter);
+            this.picture16.Click += new System.EventHandler(this.onPictureClick);
+            this.picture16.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture16.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // label17
             // 
@@ -530,9 +558,9 @@
             this.picture13.Size = new System.Drawing.Size(50, 50);
             this.picture13.TabIndex = 10;
             this.picture13.TabStop = false;
-            this.picture13.Click += new System.EventHandler(this.picture13_Click);
-            this.picture13.DragDrop += new System.Windows.Forms.DragEventHandler(this.picture13_DragDrop);
-            this.picture13.DragEnter += new System.Windows.Forms.DragEventHandler(this.picture13_DragEnter);
+            this.picture13.Click += new System.EventHandler(this.onPictureClick);
+            this.picture13.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture13.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // label18
             // 
@@ -561,9 +589,9 @@
             this.picture17.Size = new System.Drawing.Size(50, 50);
             this.picture17.TabIndex = 14;
             this.picture17.TabStop = false;
-            this.picture17.Click += new System.EventHandler(this.picture17_Click);
-            this.picture17.DragDrop += new System.Windows.Forms.DragEventHandler(this.picture17_DragDrop);
-            this.picture17.DragEnter += new System.Windows.Forms.DragEventHandler(this.picture17_DragEnter);
+            this.picture17.Click += new System.EventHandler(this.onPictureClick);
+            this.picture17.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture17.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // label14
             // 
@@ -583,9 +611,9 @@
             this.picture12.Size = new System.Drawing.Size(50, 50);
             this.picture12.TabIndex = 6;
             this.picture12.TabStop = false;
-            this.picture12.Click += new System.EventHandler(this.picture12_Click);
-            this.picture12.DragDrop += new System.Windows.Forms.DragEventHandler(this.picture12_DragDrop);
-            this.picture12.DragEnter += new System.Windows.Forms.DragEventHandler(this.picture12_DragEnter);
+            this.picture12.Click += new System.EventHandler(this.onPictureClick);
+            this.picture12.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture12.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // picture14
             // 
@@ -596,9 +624,9 @@
             this.picture14.Size = new System.Drawing.Size(50, 50);
             this.picture14.TabIndex = 2;
             this.picture14.TabStop = false;
-            this.picture14.Click += new System.EventHandler(this.picture14_Click);
-            this.picture14.DragDrop += new System.Windows.Forms.DragEventHandler(this.picture14_DragDrop);
-            this.picture14.DragEnter += new System.Windows.Forms.DragEventHandler(this.picture14_DragEnter);
+            this.picture14.Click += new System.EventHandler(this.onPictureClick);
+            this.picture14.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture14.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // picture11
             // 
@@ -610,9 +638,9 @@
             this.picture11.Size = new System.Drawing.Size(50, 50);
             this.picture11.TabIndex = 8;
             this.picture11.TabStop = false;
-            this.picture11.Click += new System.EventHandler(this.picture11_Click);
-            this.picture11.DragDrop += new System.Windows.Forms.DragEventHandler(this.picture11_DragDrop);
-            this.picture11.DragEnter += new System.Windows.Forms.DragEventHandler(this.picture11_DragEnter);
+            this.picture11.Click += new System.EventHandler(this.onPictureClick);
+            this.picture11.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture11.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // label15
             // 
@@ -641,9 +669,9 @@
             this.picture15.Size = new System.Drawing.Size(50, 50);
             this.picture15.TabIndex = 0;
             this.picture15.TabStop = false;
-            this.picture15.Click += new System.EventHandler(this.picture15_Click);
-            this.picture15.DragDrop += new System.Windows.Forms.DragEventHandler(this.picture15_DragDrop);
-            this.picture15.DragEnter += new System.Windows.Forms.DragEventHandler(this.picture15_DragEnter);
+            this.picture15.Click += new System.EventHandler(this.onPictureClick);
+            this.picture15.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture15.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // face2
             // 
@@ -708,6 +736,9 @@
             this.picture29.Size = new System.Drawing.Size(50, 50);
             this.picture29.TabIndex = 16;
             this.picture29.TabStop = false;
+            this.picture29.Click += new System.EventHandler(this.onPictureClick);
+            this.picture29.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture29.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // picture28
             // 
@@ -718,6 +749,9 @@
             this.picture28.Size = new System.Drawing.Size(50, 50);
             this.picture28.TabIndex = 12;
             this.picture28.TabStop = false;
+            this.picture28.Click += new System.EventHandler(this.onPictureClick);
+            this.picture28.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture28.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // picture26
             // 
@@ -728,6 +762,9 @@
             this.picture26.Size = new System.Drawing.Size(50, 50);
             this.picture26.TabIndex = 4;
             this.picture26.TabStop = false;
+            this.picture26.Click += new System.EventHandler(this.onPictureClick);
+            this.picture26.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture26.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // label27
             // 
@@ -747,6 +784,9 @@
             this.picture23.Size = new System.Drawing.Size(50, 50);
             this.picture23.TabIndex = 10;
             this.picture23.TabStop = false;
+            this.picture23.Click += new System.EventHandler(this.onPictureClick);
+            this.picture23.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture23.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // label28
             // 
@@ -775,6 +815,9 @@
             this.picture27.Size = new System.Drawing.Size(50, 50);
             this.picture27.TabIndex = 14;
             this.picture27.TabStop = false;
+            this.picture27.Click += new System.EventHandler(this.onPictureClick);
+            this.picture27.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture27.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // label24
             // 
@@ -794,6 +837,9 @@
             this.picture22.Size = new System.Drawing.Size(50, 50);
             this.picture22.TabIndex = 6;
             this.picture22.TabStop = false;
+            this.picture22.Click += new System.EventHandler(this.onPictureClick);
+            this.picture22.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture22.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // picture24
             // 
@@ -804,6 +850,9 @@
             this.picture24.Size = new System.Drawing.Size(50, 50);
             this.picture24.TabIndex = 2;
             this.picture24.TabStop = false;
+            this.picture24.Click += new System.EventHandler(this.onPictureClick);
+            this.picture24.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture24.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // picture21
             // 
@@ -815,6 +864,9 @@
             this.picture21.Size = new System.Drawing.Size(50, 50);
             this.picture21.TabIndex = 8;
             this.picture21.TabStop = false;
+            this.picture21.Click += new System.EventHandler(this.onPictureClick);
+            this.picture21.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture21.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // label25
             // 
@@ -843,6 +895,9 @@
             this.picture25.Size = new System.Drawing.Size(50, 50);
             this.picture25.TabIndex = 0;
             this.picture25.TabStop = false;
+            this.picture25.Click += new System.EventHandler(this.onPictureClick);
+            this.picture25.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture25.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // face4
             // 
@@ -907,6 +962,9 @@
             this.picture49.Size = new System.Drawing.Size(50, 50);
             this.picture49.TabIndex = 16;
             this.picture49.TabStop = false;
+            this.picture49.Click += new System.EventHandler(this.onPictureClick);
+            this.picture49.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture49.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // picture48
             // 
@@ -917,6 +975,9 @@
             this.picture48.Size = new System.Drawing.Size(50, 50);
             this.picture48.TabIndex = 12;
             this.picture48.TabStop = false;
+            this.picture48.Click += new System.EventHandler(this.onPictureClick);
+            this.picture48.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture48.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // picture46
             // 
@@ -927,6 +988,9 @@
             this.picture46.Size = new System.Drawing.Size(50, 50);
             this.picture46.TabIndex = 4;
             this.picture46.TabStop = false;
+            this.picture46.Click += new System.EventHandler(this.onPictureClick);
+            this.picture46.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture46.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // label47
             // 
@@ -946,6 +1010,9 @@
             this.picture43.Size = new System.Drawing.Size(50, 50);
             this.picture43.TabIndex = 10;
             this.picture43.TabStop = false;
+            this.picture43.Click += new System.EventHandler(this.onPictureClick);
+            this.picture43.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture43.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // label48
             // 
@@ -974,6 +1041,9 @@
             this.picture47.Size = new System.Drawing.Size(50, 50);
             this.picture47.TabIndex = 14;
             this.picture47.TabStop = false;
+            this.picture47.Click += new System.EventHandler(this.onPictureClick);
+            this.picture47.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture47.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // label44
             // 
@@ -993,6 +1063,9 @@
             this.picture42.Size = new System.Drawing.Size(50, 50);
             this.picture42.TabIndex = 6;
             this.picture42.TabStop = false;
+            this.picture42.Click += new System.EventHandler(this.onPictureClick);
+            this.picture42.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture42.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // picture44
             // 
@@ -1003,6 +1076,9 @@
             this.picture44.Size = new System.Drawing.Size(50, 50);
             this.picture44.TabIndex = 2;
             this.picture44.TabStop = false;
+            this.picture44.Click += new System.EventHandler(this.onPictureClick);
+            this.picture44.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture44.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // picture41
             // 
@@ -1014,6 +1090,9 @@
             this.picture41.Size = new System.Drawing.Size(50, 50);
             this.picture41.TabIndex = 8;
             this.picture41.TabStop = false;
+            this.picture41.Click += new System.EventHandler(this.onPictureClick);
+            this.picture41.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture41.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // label45
             // 
@@ -1042,6 +1121,9 @@
             this.picture45.Size = new System.Drawing.Size(50, 50);
             this.picture45.TabIndex = 0;
             this.picture45.TabStop = false;
+            this.picture45.Click += new System.EventHandler(this.onPictureClick);
+            this.picture45.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture45.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // face5
             // 
@@ -1106,6 +1188,9 @@
             this.picture59.Size = new System.Drawing.Size(50, 50);
             this.picture59.TabIndex = 16;
             this.picture59.TabStop = false;
+            this.picture59.Click += new System.EventHandler(this.onPictureClick);
+            this.picture59.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture59.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // picture58
             // 
@@ -1116,6 +1201,9 @@
             this.picture58.Size = new System.Drawing.Size(50, 50);
             this.picture58.TabIndex = 12;
             this.picture58.TabStop = false;
+            this.picture58.Click += new System.EventHandler(this.onPictureClick);
+            this.picture58.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture58.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // picture56
             // 
@@ -1126,6 +1214,9 @@
             this.picture56.Size = new System.Drawing.Size(50, 50);
             this.picture56.TabIndex = 4;
             this.picture56.TabStop = false;
+            this.picture56.Click += new System.EventHandler(this.onPictureClick);
+            this.picture56.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture56.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // label57
             // 
@@ -1145,6 +1236,9 @@
             this.picture53.Size = new System.Drawing.Size(50, 50);
             this.picture53.TabIndex = 10;
             this.picture53.TabStop = false;
+            this.picture53.Click += new System.EventHandler(this.onPictureClick);
+            this.picture53.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture53.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // label58
             // 
@@ -1173,6 +1267,9 @@
             this.picture57.Size = new System.Drawing.Size(50, 50);
             this.picture57.TabIndex = 14;
             this.picture57.TabStop = false;
+            this.picture57.Click += new System.EventHandler(this.onPictureClick);
+            this.picture57.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture57.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // label54
             // 
@@ -1192,6 +1289,9 @@
             this.picture52.Size = new System.Drawing.Size(50, 50);
             this.picture52.TabIndex = 6;
             this.picture52.TabStop = false;
+            this.picture52.Click += new System.EventHandler(this.onPictureClick);
+            this.picture52.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture52.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // picture54
             // 
@@ -1202,6 +1302,9 @@
             this.picture54.Size = new System.Drawing.Size(50, 50);
             this.picture54.TabIndex = 2;
             this.picture54.TabStop = false;
+            this.picture54.Click += new System.EventHandler(this.onPictureClick);
+            this.picture54.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture54.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // picture51
             // 
@@ -1213,6 +1316,9 @@
             this.picture51.Size = new System.Drawing.Size(50, 50);
             this.picture51.TabIndex = 8;
             this.picture51.TabStop = false;
+            this.picture51.Click += new System.EventHandler(this.onPictureClick);
+            this.picture51.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture51.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // label55
             // 
@@ -1241,6 +1347,9 @@
             this.picture55.Size = new System.Drawing.Size(50, 50);
             this.picture55.TabIndex = 0;
             this.picture55.TabStop = false;
+            this.picture55.Click += new System.EventHandler(this.onPictureClick);
+            this.picture55.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture55.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // face6
             // 
@@ -1305,6 +1414,9 @@
             this.picture69.Size = new System.Drawing.Size(50, 50);
             this.picture69.TabIndex = 16;
             this.picture69.TabStop = false;
+            this.picture69.Click += new System.EventHandler(this.onPictureClick);
+            this.picture69.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture69.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // picture68
             // 
@@ -1315,6 +1427,9 @@
             this.picture68.Size = new System.Drawing.Size(50, 50);
             this.picture68.TabIndex = 12;
             this.picture68.TabStop = false;
+            this.picture68.Click += new System.EventHandler(this.onPictureClick);
+            this.picture68.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture68.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // picture66
             // 
@@ -1325,6 +1440,9 @@
             this.picture66.Size = new System.Drawing.Size(50, 50);
             this.picture66.TabIndex = 4;
             this.picture66.TabStop = false;
+            this.picture66.Click += new System.EventHandler(this.onPictureClick);
+            this.picture66.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture66.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // label67
             // 
@@ -1344,6 +1462,9 @@
             this.picture63.Size = new System.Drawing.Size(50, 50);
             this.picture63.TabIndex = 10;
             this.picture63.TabStop = false;
+            this.picture63.Click += new System.EventHandler(this.onPictureClick);
+            this.picture63.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture63.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // label68
             // 
@@ -1372,6 +1493,9 @@
             this.picture67.Size = new System.Drawing.Size(50, 50);
             this.picture67.TabIndex = 14;
             this.picture67.TabStop = false;
+            this.picture67.Click += new System.EventHandler(this.onPictureClick);
+            this.picture67.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture67.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // label64
             // 
@@ -1391,6 +1515,9 @@
             this.picture62.Size = new System.Drawing.Size(50, 50);
             this.picture62.TabIndex = 6;
             this.picture62.TabStop = false;
+            this.picture62.Click += new System.EventHandler(this.onPictureClick);
+            this.picture62.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture62.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // picture64
             // 
@@ -1401,6 +1528,9 @@
             this.picture64.Size = new System.Drawing.Size(50, 50);
             this.picture64.TabIndex = 2;
             this.picture64.TabStop = false;
+            this.picture64.Click += new System.EventHandler(this.onPictureClick);
+            this.picture64.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture64.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // picture61
             // 
@@ -1412,6 +1542,9 @@
             this.picture61.Size = new System.Drawing.Size(50, 50);
             this.picture61.TabIndex = 8;
             this.picture61.TabStop = false;
+            this.picture61.Click += new System.EventHandler(this.onPictureClick);
+            this.picture61.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture61.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // label65
             // 
@@ -1440,6 +1573,9 @@
             this.picture65.Size = new System.Drawing.Size(50, 50);
             this.picture65.TabIndex = 0;
             this.picture65.TabStop = false;
+            this.picture65.Click += new System.EventHandler(this.onPictureClick);
+            this.picture65.DragDrop += new System.Windows.Forms.DragEventHandler(this.onPictureDrop);
+            this.picture65.DragEnter += new System.Windows.Forms.DragEventHandler(this.onPictureEnter);
             // 
             // pictureBlank
             // 
@@ -1541,11 +1677,21 @@
             this.pictureCorner.TabStop = false;
             this.pictureCorner.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureCorner_MouseMove);
             // 
+            // btnExport
+            // 
+            this.btnExport.Location = new System.Drawing.Point(672, 8);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(64, 23);
+            this.btnExport.TabIndex = 31;
+            this.btnExport.Text = "Export";
+            this.btnExport.UseVisualStyleBackColor = true;
+            // 
             // Kube
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(780, 957);
+            this.Controls.Add(this.btnExport);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.pictureCorner);
             this.Controls.Add(this.label4);
@@ -1769,5 +1915,6 @@
         private PictureBox pictureStraight;
         private Label label5;
         private PictureBox pictureCorner;
+        private Button btnExport;
     }
 }
