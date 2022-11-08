@@ -82,6 +82,34 @@ namespace KubePuzzleBuilder
 
         }
 
+        private void btnExport_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "JSON|*.json";
+            saveFileDialog.Title = "Export as JSON";
+            saveFileDialog.ShowDialog();
+
+            if (saveFileDialog.FileName != "")
+            {
+                string output = tileWorker.export();
+
+                try
+                {
+                    StreamWriter file = new StreamWriter(saveFileDialog.FileName);
+                    file.WriteAsync(output);
+                    file.Close();
+                } catch (Exception exception)
+                {
+                    MessageBox.Show(
+                        exception.Message,
+                        "Export as JSON",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Error
+                        );
+                }
+            }
+        }
+
         // --------------------------template--------------------------
         private void pictureBlank_MouseMove(object sender, MouseEventArgs e)
         {
@@ -129,13 +157,13 @@ namespace KubePuzzleBuilder
                 if (picture == null) throw new SystemException("Cannot find picture");
 
                 string labelName = "label" + picture.Name.Substring(picture.Name.Length - 2);
-                Label? label = this.Controls.Find(labelName, true).FirstOrDefault() as Label;
+                Label? label = Controls.Find(labelName, true).FirstOrDefault() as Label;
                 if (label == null) throw new SystemException("Cannot find label");
 
                 if (e.Data != null && e.Data.GetDataPresent(DataFormats.Bitmap))
                 {
                     var bmp = (Bitmap)e.Data.GetData(DataFormats.Bitmap);
-                    picture.Image = bmp;
+                    picture.Image = (Image)bmp.Clone();
                     tileWorker.updateTileImage(picture.Name, chosenPictureIndex, label);
                     chosenPictureIndex = 0;
                 }
@@ -150,7 +178,7 @@ namespace KubePuzzleBuilder
                 if (picture == null) throw new SystemException("Cannot find picture");
 
                 string labelName = "label" + picture.Name.Substring(picture.Name.Length - 2);
-                Label? label = this.Controls.Find(labelName, true).FirstOrDefault() as Label;
+                Label? label = Controls.Find(labelName, true).FirstOrDefault() as Label;
                 if (label == null) throw new SystemException("Cannot find label");
 
                 MouseEventArgs me = (MouseEventArgs)e;

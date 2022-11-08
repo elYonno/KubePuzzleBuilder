@@ -8,16 +8,16 @@ namespace KubePuzzleBuilder
 {
     internal class Tile
     {
-        private readonly String id;
-        private int tileType;
-        private int tileOrientation;
+        private readonly string id;
+        private int tileType = 0;
+        private int tileOrientation = 1;
 
-        public Tile(String id)
+        public Tile(string id)
         {
             this.id = id;
         }
 
-        public String getID() { return id; }
+        public string getID() { return id; }
 
         public int getTileType() { return tileType; }
 
@@ -25,21 +25,21 @@ namespace KubePuzzleBuilder
 
         public void setTileType(int tileType) { this.tileType = tileType; }
 
-        public void resetTileOrientation() { this.tileOrientation = 1; }
+        public void resetTileOrientation() { tileOrientation = 1; }
 
         public void turnClockwise()
         {
-            this.tileOrientation++;
-            if (this.tileOrientation > 4) tileOrientation = 1;
+            tileOrientation++;
+            if (tileOrientation > 4) tileOrientation = 1;
         }
 
         public void turnAntiClockwise()
         {
-            this.tileOrientation--;
-            if (this.tileOrientation < 1) tileOrientation = 4;
+            tileOrientation--;
+            if (tileOrientation < 1) tileOrientation = 4;
         }
 
-        public String print()
+        public string print()
         {
             return Int32.Parse(id.Substring(1, 1)) + ": " + getTileType() + "," + getTileOrientation();
         }
