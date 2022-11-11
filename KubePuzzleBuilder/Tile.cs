@@ -6,11 +6,26 @@ using System.Threading.Tasks;
 
 namespace KubePuzzleBuilder
 {
+    internal enum ItemType
+    {
+        NONE,
+        GREEN_KEY,
+        YELLOW_KEY,
+        GREEN_LOCK,
+        YELLOW_LOCK,
+        BUTTON,
+        GATE,
+        PORTAL,
+        LEVER,
+        CONVEYOR
+    };
+
     internal class Tile
     {
         private readonly string id;
         private int tileType = 0;
         private int tileOrientation = 1;
+        private ItemType itemType = ItemType.NONE;
 
         public Tile(string id)
         {
@@ -24,6 +39,10 @@ namespace KubePuzzleBuilder
         public int getTileOrientation() { return tileOrientation; }
 
         public void setTileType(int tileType) { this.tileType = tileType; }
+
+        public void setItemType(ItemType itemType) { this.itemType = itemType; }
+
+        public ItemType getItemType() { return itemType; }
 
         public void resetTileOrientation() { tileOrientation = 1; }
 

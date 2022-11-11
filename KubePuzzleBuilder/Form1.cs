@@ -5,8 +5,11 @@ namespace KubePuzzleBuilder
 {
     public partial class Kube : Form
     {
-        private int chosenPictureIndex = 0;
         private TileWorker tileWorker;
+
+        private int chosenPictureIndex = 0;
+        private bool itemSelect = false;
+        private ItemType chosenItemType = ItemType.NONE;
 
         public Kube()
         {
@@ -111,6 +114,7 @@ namespace KubePuzzleBuilder
         }
 
         // --------------------------template--------------------------
+        //TODO: do one event function, get index via tag
         private void pictureBlank_MouseMove(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
@@ -214,6 +218,11 @@ namespace KubePuzzleBuilder
                     e.Effect = DragDropEffects.Copy;
                 else
                     e.Effect = DragDropEffects.None;
+        }
+
+        private void item_MouseMove(object sender, MouseEventArgs e)
+        {
+            //TODO: do event for mouse
         }
     }
 }
