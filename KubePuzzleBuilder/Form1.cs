@@ -148,6 +148,13 @@ namespace KubePuzzleBuilder
             chosenPictureIndex = 4;
         }
 
+        private void pictureTJunction_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+                pictureCorner.DoDragDrop(pictureTJunction.Image, DragDropEffects.All);
+            chosenPictureIndex = 5;
+        }
+
         // --------------------------tile functions--------------------------
         private void onPictureDrop(object sender, DragEventArgs e)
         {

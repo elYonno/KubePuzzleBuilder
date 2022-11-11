@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Kube));
             this.picture35 = new System.Windows.Forms.PictureBox();
             this.face3 = new System.Windows.Forms.GroupBox();
             this.label33 = new System.Windows.Forms.Label();
@@ -154,6 +153,10 @@
             this.label5 = new System.Windows.Forms.Label();
             this.pictureCorner = new System.Windows.Forms.PictureBox();
             this.btnExport = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.pictureTJunction = new System.Windows.Forms.PictureBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picture35)).BeginInit();
             this.face3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picture39)).BeginInit();
@@ -219,12 +222,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureFinish)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureStraight)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureCorner)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureTJunction)).BeginInit();
             this.SuspendLayout();
             // 
             // picture35
             // 
             this.picture35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture35.Image = ((System.Drawing.Image)(resources.GetObject("picture35.Image")));
+            this.picture35.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
             this.picture35.Location = new System.Drawing.Point(64, 88);
             this.picture35.Name = "picture35";
             this.picture35.Size = new System.Drawing.Size(50, 50);
@@ -291,7 +295,7 @@
             // picture39
             // 
             this.picture39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture39.Image = ((System.Drawing.Image)(resources.GetObject("picture39.Image")));
+            this.picture39.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
             this.picture39.Location = new System.Drawing.Point(120, 152);
             this.picture39.Name = "picture39";
             this.picture39.Size = new System.Drawing.Size(50, 50);
@@ -304,7 +308,7 @@
             // picture38
             // 
             this.picture38.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture38.Image = ((System.Drawing.Image)(resources.GetObject("picture38.Image")));
+            this.picture38.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
             this.picture38.Location = new System.Drawing.Point(65, 153);
             this.picture38.Name = "picture38";
             this.picture38.Size = new System.Drawing.Size(50, 50);
@@ -317,7 +321,7 @@
             // picture36
             // 
             this.picture36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture36.Image = ((System.Drawing.Image)(resources.GetObject("picture36.Image")));
+            this.picture36.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
             this.picture36.Location = new System.Drawing.Point(120, 88);
             this.picture36.Name = "picture36";
             this.picture36.Size = new System.Drawing.Size(50, 50);
@@ -339,7 +343,7 @@
             // picture33
             // 
             this.picture33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture33.Image = ((System.Drawing.Image)(resources.GetObject("picture33.Image")));
+            this.picture33.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
             this.picture33.Location = new System.Drawing.Point(120, 24);
             this.picture33.Name = "picture33";
             this.picture33.Size = new System.Drawing.Size(50, 50);
@@ -370,7 +374,7 @@
             // picture37
             // 
             this.picture37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture37.Image = ((System.Drawing.Image)(resources.GetObject("picture37.Image")));
+            this.picture37.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
             this.picture37.Location = new System.Drawing.Point(9, 153);
             this.picture37.Name = "picture37";
             this.picture37.Size = new System.Drawing.Size(50, 50);
@@ -392,7 +396,7 @@
             // picture32
             // 
             this.picture32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture32.Image = ((System.Drawing.Image)(resources.GetObject("picture32.Image")));
+            this.picture32.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
             this.picture32.Location = new System.Drawing.Point(64, 24);
             this.picture32.Name = "picture32";
             this.picture32.Size = new System.Drawing.Size(50, 50);
@@ -405,7 +409,7 @@
             // picture34
             // 
             this.picture34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture34.Image = ((System.Drawing.Image)(resources.GetObject("picture34.Image")));
+            this.picture34.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
             this.picture34.Location = new System.Drawing.Point(8, 88);
             this.picture34.Name = "picture34";
             this.picture34.Size = new System.Drawing.Size(50, 50);
@@ -418,8 +422,8 @@
             // picture31
             // 
             this.picture31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture31.Image = ((System.Drawing.Image)(resources.GetObject("picture31.Image")));
-            this.picture31.InitialImage = ((System.Drawing.Image)(resources.GetObject("picture31.InitialImage")));
+            this.picture31.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
+            this.picture31.InitialImage = null;
             this.picture31.Location = new System.Drawing.Point(8, 24);
             this.picture31.Name = "picture31";
             this.picture31.Size = new System.Drawing.Size(50, 50);
@@ -504,7 +508,7 @@
             // picture19
             // 
             this.picture19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture19.Image = ((System.Drawing.Image)(resources.GetObject("picture19.Image")));
+            this.picture19.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
             this.picture19.Location = new System.Drawing.Point(120, 152);
             this.picture19.Name = "picture19";
             this.picture19.Size = new System.Drawing.Size(50, 50);
@@ -517,7 +521,7 @@
             // picture18
             // 
             this.picture18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture18.Image = ((System.Drawing.Image)(resources.GetObject("picture18.Image")));
+            this.picture18.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
             this.picture18.Location = new System.Drawing.Point(65, 153);
             this.picture18.Name = "picture18";
             this.picture18.Size = new System.Drawing.Size(50, 50);
@@ -530,7 +534,7 @@
             // picture16
             // 
             this.picture16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture16.Image = ((System.Drawing.Image)(resources.GetObject("picture16.Image")));
+            this.picture16.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
             this.picture16.Location = new System.Drawing.Point(120, 88);
             this.picture16.Name = "picture16";
             this.picture16.Size = new System.Drawing.Size(50, 50);
@@ -552,7 +556,7 @@
             // picture13
             // 
             this.picture13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture13.Image = ((System.Drawing.Image)(resources.GetObject("picture13.Image")));
+            this.picture13.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
             this.picture13.Location = new System.Drawing.Point(120, 24);
             this.picture13.Name = "picture13";
             this.picture13.Size = new System.Drawing.Size(50, 50);
@@ -583,7 +587,7 @@
             // picture17
             // 
             this.picture17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture17.Image = ((System.Drawing.Image)(resources.GetObject("picture17.Image")));
+            this.picture17.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
             this.picture17.Location = new System.Drawing.Point(9, 153);
             this.picture17.Name = "picture17";
             this.picture17.Size = new System.Drawing.Size(50, 50);
@@ -605,7 +609,7 @@
             // picture12
             // 
             this.picture12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture12.Image = ((System.Drawing.Image)(resources.GetObject("picture12.Image")));
+            this.picture12.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
             this.picture12.Location = new System.Drawing.Point(64, 24);
             this.picture12.Name = "picture12";
             this.picture12.Size = new System.Drawing.Size(50, 50);
@@ -618,7 +622,7 @@
             // picture14
             // 
             this.picture14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture14.Image = ((System.Drawing.Image)(resources.GetObject("picture14.Image")));
+            this.picture14.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
             this.picture14.Location = new System.Drawing.Point(8, 88);
             this.picture14.Name = "picture14";
             this.picture14.Size = new System.Drawing.Size(50, 50);
@@ -631,8 +635,8 @@
             // picture11
             // 
             this.picture11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture11.Image = ((System.Drawing.Image)(resources.GetObject("picture11.Image")));
-            this.picture11.InitialImage = ((System.Drawing.Image)(resources.GetObject("picture11.InitialImage")));
+            this.picture11.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
+            this.picture11.InitialImage = null;
             this.picture11.Location = new System.Drawing.Point(8, 24);
             this.picture11.Name = "picture11";
             this.picture11.Size = new System.Drawing.Size(50, 50);
@@ -663,7 +667,7 @@
             // picture15
             // 
             this.picture15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture15.Image = ((System.Drawing.Image)(resources.GetObject("picture15.Image")));
+            this.picture15.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
             this.picture15.Location = new System.Drawing.Point(64, 88);
             this.picture15.Name = "picture15";
             this.picture15.Size = new System.Drawing.Size(50, 50);
@@ -730,7 +734,7 @@
             // picture29
             // 
             this.picture29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture29.Image = ((System.Drawing.Image)(resources.GetObject("picture29.Image")));
+            this.picture29.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
             this.picture29.Location = new System.Drawing.Point(120, 152);
             this.picture29.Name = "picture29";
             this.picture29.Size = new System.Drawing.Size(50, 50);
@@ -743,7 +747,7 @@
             // picture28
             // 
             this.picture28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture28.Image = ((System.Drawing.Image)(resources.GetObject("picture28.Image")));
+            this.picture28.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
             this.picture28.Location = new System.Drawing.Point(65, 153);
             this.picture28.Name = "picture28";
             this.picture28.Size = new System.Drawing.Size(50, 50);
@@ -756,7 +760,7 @@
             // picture26
             // 
             this.picture26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture26.Image = ((System.Drawing.Image)(resources.GetObject("picture26.Image")));
+            this.picture26.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
             this.picture26.Location = new System.Drawing.Point(120, 88);
             this.picture26.Name = "picture26";
             this.picture26.Size = new System.Drawing.Size(50, 50);
@@ -778,7 +782,7 @@
             // picture23
             // 
             this.picture23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture23.Image = ((System.Drawing.Image)(resources.GetObject("picture23.Image")));
+            this.picture23.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
             this.picture23.Location = new System.Drawing.Point(120, 24);
             this.picture23.Name = "picture23";
             this.picture23.Size = new System.Drawing.Size(50, 50);
@@ -809,7 +813,7 @@
             // picture27
             // 
             this.picture27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture27.Image = ((System.Drawing.Image)(resources.GetObject("picture27.Image")));
+            this.picture27.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
             this.picture27.Location = new System.Drawing.Point(9, 153);
             this.picture27.Name = "picture27";
             this.picture27.Size = new System.Drawing.Size(50, 50);
@@ -831,7 +835,7 @@
             // picture22
             // 
             this.picture22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture22.Image = ((System.Drawing.Image)(resources.GetObject("picture22.Image")));
+            this.picture22.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
             this.picture22.Location = new System.Drawing.Point(64, 24);
             this.picture22.Name = "picture22";
             this.picture22.Size = new System.Drawing.Size(50, 50);
@@ -844,7 +848,7 @@
             // picture24
             // 
             this.picture24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture24.Image = ((System.Drawing.Image)(resources.GetObject("picture24.Image")));
+            this.picture24.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
             this.picture24.Location = new System.Drawing.Point(8, 88);
             this.picture24.Name = "picture24";
             this.picture24.Size = new System.Drawing.Size(50, 50);
@@ -857,8 +861,8 @@
             // picture21
             // 
             this.picture21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture21.Image = ((System.Drawing.Image)(resources.GetObject("picture21.Image")));
-            this.picture21.InitialImage = ((System.Drawing.Image)(resources.GetObject("picture21.InitialImage")));
+            this.picture21.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
+            this.picture21.InitialImage = null;
             this.picture21.Location = new System.Drawing.Point(8, 24);
             this.picture21.Name = "picture21";
             this.picture21.Size = new System.Drawing.Size(50, 50);
@@ -889,7 +893,7 @@
             // picture25
             // 
             this.picture25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture25.Image = ((System.Drawing.Image)(resources.GetObject("picture25.Image")));
+            this.picture25.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
             this.picture25.Location = new System.Drawing.Point(64, 88);
             this.picture25.Name = "picture25";
             this.picture25.Size = new System.Drawing.Size(50, 50);
@@ -956,7 +960,7 @@
             // picture49
             // 
             this.picture49.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture49.Image = ((System.Drawing.Image)(resources.GetObject("picture49.Image")));
+            this.picture49.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
             this.picture49.Location = new System.Drawing.Point(120, 152);
             this.picture49.Name = "picture49";
             this.picture49.Size = new System.Drawing.Size(50, 50);
@@ -969,7 +973,7 @@
             // picture48
             // 
             this.picture48.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture48.Image = ((System.Drawing.Image)(resources.GetObject("picture48.Image")));
+            this.picture48.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
             this.picture48.Location = new System.Drawing.Point(65, 153);
             this.picture48.Name = "picture48";
             this.picture48.Size = new System.Drawing.Size(50, 50);
@@ -982,7 +986,7 @@
             // picture46
             // 
             this.picture46.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture46.Image = ((System.Drawing.Image)(resources.GetObject("picture46.Image")));
+            this.picture46.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
             this.picture46.Location = new System.Drawing.Point(120, 88);
             this.picture46.Name = "picture46";
             this.picture46.Size = new System.Drawing.Size(50, 50);
@@ -1004,7 +1008,7 @@
             // picture43
             // 
             this.picture43.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture43.Image = ((System.Drawing.Image)(resources.GetObject("picture43.Image")));
+            this.picture43.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
             this.picture43.Location = new System.Drawing.Point(120, 24);
             this.picture43.Name = "picture43";
             this.picture43.Size = new System.Drawing.Size(50, 50);
@@ -1035,7 +1039,7 @@
             // picture47
             // 
             this.picture47.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture47.Image = ((System.Drawing.Image)(resources.GetObject("picture47.Image")));
+            this.picture47.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
             this.picture47.Location = new System.Drawing.Point(9, 153);
             this.picture47.Name = "picture47";
             this.picture47.Size = new System.Drawing.Size(50, 50);
@@ -1057,7 +1061,7 @@
             // picture42
             // 
             this.picture42.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture42.Image = ((System.Drawing.Image)(resources.GetObject("picture42.Image")));
+            this.picture42.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
             this.picture42.Location = new System.Drawing.Point(64, 24);
             this.picture42.Name = "picture42";
             this.picture42.Size = new System.Drawing.Size(50, 50);
@@ -1070,7 +1074,7 @@
             // picture44
             // 
             this.picture44.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture44.Image = ((System.Drawing.Image)(resources.GetObject("picture44.Image")));
+            this.picture44.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
             this.picture44.Location = new System.Drawing.Point(8, 88);
             this.picture44.Name = "picture44";
             this.picture44.Size = new System.Drawing.Size(50, 50);
@@ -1083,8 +1087,8 @@
             // picture41
             // 
             this.picture41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture41.Image = ((System.Drawing.Image)(resources.GetObject("picture41.Image")));
-            this.picture41.InitialImage = ((System.Drawing.Image)(resources.GetObject("picture41.InitialImage")));
+            this.picture41.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
+            this.picture41.InitialImage = null;
             this.picture41.Location = new System.Drawing.Point(8, 24);
             this.picture41.Name = "picture41";
             this.picture41.Size = new System.Drawing.Size(50, 50);
@@ -1115,7 +1119,7 @@
             // picture45
             // 
             this.picture45.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture45.Image = ((System.Drawing.Image)(resources.GetObject("picture45.Image")));
+            this.picture45.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
             this.picture45.Location = new System.Drawing.Point(64, 88);
             this.picture45.Name = "picture45";
             this.picture45.Size = new System.Drawing.Size(50, 50);
@@ -1182,7 +1186,7 @@
             // picture59
             // 
             this.picture59.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture59.Image = ((System.Drawing.Image)(resources.GetObject("picture59.Image")));
+            this.picture59.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
             this.picture59.Location = new System.Drawing.Point(120, 152);
             this.picture59.Name = "picture59";
             this.picture59.Size = new System.Drawing.Size(50, 50);
@@ -1195,7 +1199,7 @@
             // picture58
             // 
             this.picture58.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture58.Image = ((System.Drawing.Image)(resources.GetObject("picture58.Image")));
+            this.picture58.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
             this.picture58.Location = new System.Drawing.Point(65, 153);
             this.picture58.Name = "picture58";
             this.picture58.Size = new System.Drawing.Size(50, 50);
@@ -1208,7 +1212,7 @@
             // picture56
             // 
             this.picture56.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture56.Image = ((System.Drawing.Image)(resources.GetObject("picture56.Image")));
+            this.picture56.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
             this.picture56.Location = new System.Drawing.Point(120, 88);
             this.picture56.Name = "picture56";
             this.picture56.Size = new System.Drawing.Size(50, 50);
@@ -1230,7 +1234,7 @@
             // picture53
             // 
             this.picture53.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture53.Image = ((System.Drawing.Image)(resources.GetObject("picture53.Image")));
+            this.picture53.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
             this.picture53.Location = new System.Drawing.Point(120, 24);
             this.picture53.Name = "picture53";
             this.picture53.Size = new System.Drawing.Size(50, 50);
@@ -1261,7 +1265,7 @@
             // picture57
             // 
             this.picture57.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture57.Image = ((System.Drawing.Image)(resources.GetObject("picture57.Image")));
+            this.picture57.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
             this.picture57.Location = new System.Drawing.Point(9, 153);
             this.picture57.Name = "picture57";
             this.picture57.Size = new System.Drawing.Size(50, 50);
@@ -1283,7 +1287,7 @@
             // picture52
             // 
             this.picture52.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture52.Image = ((System.Drawing.Image)(resources.GetObject("picture52.Image")));
+            this.picture52.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
             this.picture52.Location = new System.Drawing.Point(64, 24);
             this.picture52.Name = "picture52";
             this.picture52.Size = new System.Drawing.Size(50, 50);
@@ -1296,7 +1300,7 @@
             // picture54
             // 
             this.picture54.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture54.Image = ((System.Drawing.Image)(resources.GetObject("picture54.Image")));
+            this.picture54.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
             this.picture54.Location = new System.Drawing.Point(8, 88);
             this.picture54.Name = "picture54";
             this.picture54.Size = new System.Drawing.Size(50, 50);
@@ -1309,8 +1313,8 @@
             // picture51
             // 
             this.picture51.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture51.Image = ((System.Drawing.Image)(resources.GetObject("picture51.Image")));
-            this.picture51.InitialImage = ((System.Drawing.Image)(resources.GetObject("picture51.InitialImage")));
+            this.picture51.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
+            this.picture51.InitialImage = null;
             this.picture51.Location = new System.Drawing.Point(8, 24);
             this.picture51.Name = "picture51";
             this.picture51.Size = new System.Drawing.Size(50, 50);
@@ -1341,7 +1345,7 @@
             // picture55
             // 
             this.picture55.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture55.Image = ((System.Drawing.Image)(resources.GetObject("picture55.Image")));
+            this.picture55.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
             this.picture55.Location = new System.Drawing.Point(64, 88);
             this.picture55.Name = "picture55";
             this.picture55.Size = new System.Drawing.Size(50, 50);
@@ -1408,7 +1412,7 @@
             // picture69
             // 
             this.picture69.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture69.Image = ((System.Drawing.Image)(resources.GetObject("picture69.Image")));
+            this.picture69.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
             this.picture69.Location = new System.Drawing.Point(120, 152);
             this.picture69.Name = "picture69";
             this.picture69.Size = new System.Drawing.Size(50, 50);
@@ -1421,7 +1425,7 @@
             // picture68
             // 
             this.picture68.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture68.Image = ((System.Drawing.Image)(resources.GetObject("picture68.Image")));
+            this.picture68.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
             this.picture68.Location = new System.Drawing.Point(65, 153);
             this.picture68.Name = "picture68";
             this.picture68.Size = new System.Drawing.Size(50, 50);
@@ -1434,7 +1438,7 @@
             // picture66
             // 
             this.picture66.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture66.Image = ((System.Drawing.Image)(resources.GetObject("picture66.Image")));
+            this.picture66.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
             this.picture66.Location = new System.Drawing.Point(120, 88);
             this.picture66.Name = "picture66";
             this.picture66.Size = new System.Drawing.Size(50, 50);
@@ -1456,7 +1460,7 @@
             // picture63
             // 
             this.picture63.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture63.Image = ((System.Drawing.Image)(resources.GetObject("picture63.Image")));
+            this.picture63.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
             this.picture63.Location = new System.Drawing.Point(120, 24);
             this.picture63.Name = "picture63";
             this.picture63.Size = new System.Drawing.Size(50, 50);
@@ -1487,7 +1491,7 @@
             // picture67
             // 
             this.picture67.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture67.Image = ((System.Drawing.Image)(resources.GetObject("picture67.Image")));
+            this.picture67.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
             this.picture67.Location = new System.Drawing.Point(9, 153);
             this.picture67.Name = "picture67";
             this.picture67.Size = new System.Drawing.Size(50, 50);
@@ -1509,7 +1513,7 @@
             // picture62
             // 
             this.picture62.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture62.Image = ((System.Drawing.Image)(resources.GetObject("picture62.Image")));
+            this.picture62.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
             this.picture62.Location = new System.Drawing.Point(64, 24);
             this.picture62.Name = "picture62";
             this.picture62.Size = new System.Drawing.Size(50, 50);
@@ -1522,7 +1526,7 @@
             // picture64
             // 
             this.picture64.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture64.Image = ((System.Drawing.Image)(resources.GetObject("picture64.Image")));
+            this.picture64.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
             this.picture64.Location = new System.Drawing.Point(8, 88);
             this.picture64.Name = "picture64";
             this.picture64.Size = new System.Drawing.Size(50, 50);
@@ -1535,8 +1539,8 @@
             // picture61
             // 
             this.picture61.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture61.Image = ((System.Drawing.Image)(resources.GetObject("picture61.Image")));
-            this.picture61.InitialImage = ((System.Drawing.Image)(resources.GetObject("picture61.InitialImage")));
+            this.picture61.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
+            this.picture61.InitialImage = null;
             this.picture61.Location = new System.Drawing.Point(8, 24);
             this.picture61.Name = "picture61";
             this.picture61.Size = new System.Drawing.Size(50, 50);
@@ -1567,7 +1571,7 @@
             // picture65
             // 
             this.picture65.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture65.Image = ((System.Drawing.Image)(resources.GetObject("picture65.Image")));
+            this.picture65.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
             this.picture65.Location = new System.Drawing.Point(64, 88);
             this.picture65.Name = "picture65";
             this.picture65.Size = new System.Drawing.Size(50, 50);
@@ -1580,7 +1584,7 @@
             // pictureBlank
             // 
             this.pictureBlank.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBlank.Image = ((System.Drawing.Image)(resources.GetObject("pictureBlank.Image")));
+            this.pictureBlank.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
             this.pictureBlank.Location = new System.Drawing.Point(680, 40);
             this.pictureBlank.Name = "pictureBlank";
             this.pictureBlank.Size = new System.Drawing.Size(50, 50);
@@ -1609,7 +1613,7 @@
             // pictureStart
             // 
             this.pictureStart.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureStart.Image = ((System.Drawing.Image)(resources.GetObject("pictureStart.Image")));
+            this.pictureStart.Image = global::KubePuzzleBuilder.Properties.Resources.Start;
             this.pictureStart.Location = new System.Drawing.Point(680, 104);
             this.pictureStart.Name = "pictureStart";
             this.pictureStart.Size = new System.Drawing.Size(50, 50);
@@ -1629,7 +1633,7 @@
             // pictureFinish
             // 
             this.pictureFinish.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureFinish.Image = ((System.Drawing.Image)(resources.GetObject("pictureFinish.Image")));
+            this.pictureFinish.Image = global::KubePuzzleBuilder.Properties.Resources.Finish;
             this.pictureFinish.Location = new System.Drawing.Point(680, 168);
             this.pictureFinish.Name = "pictureFinish";
             this.pictureFinish.Size = new System.Drawing.Size(50, 50);
@@ -1649,7 +1653,8 @@
             // pictureStraight
             // 
             this.pictureStraight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureStraight.Image = ((System.Drawing.Image)(resources.GetObject("pictureStraight.Image")));
+            this.pictureStraight.Image = global::KubePuzzleBuilder.Properties.Resources.Straight;
+            this.pictureStraight.InitialImage = global::KubePuzzleBuilder.Properties.Resources.Straight;
             this.pictureStraight.Location = new System.Drawing.Point(680, 232);
             this.pictureStraight.Name = "pictureStraight";
             this.pictureStraight.Size = new System.Drawing.Size(50, 50);
@@ -1669,7 +1674,8 @@
             // pictureCorner
             // 
             this.pictureCorner.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureCorner.Image = ((System.Drawing.Image)(resources.GetObject("pictureCorner.Image")));
+            this.pictureCorner.Image = global::KubePuzzleBuilder.Properties.Resources.Corner;
+            this.pictureCorner.InitialImage = global::KubePuzzleBuilder.Properties.Resources.Corner;
             this.pictureCorner.Location = new System.Drawing.Point(680, 296);
             this.pictureCorner.Name = "pictureCorner";
             this.pictureCorner.Size = new System.Drawing.Size(50, 50);
@@ -1679,7 +1685,7 @@
             // 
             // btnExport
             // 
-            this.btnExport.Location = new System.Drawing.Point(672, 8);
+            this.btnExport.Location = new System.Drawing.Point(600, 40);
             this.btnExport.Name = "btnExport";
             this.btnExport.Size = new System.Drawing.Size(64, 23);
             this.btnExport.TabIndex = 31;
@@ -1687,11 +1693,56 @@
             this.btnExport.UseVisualStyleBackColor = true;
             this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(664, 408);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(78, 15);
+            this.label6.TabIndex = 33;
+            this.label6.Text = "5 - T Junction";
+            // 
+            // pictureTJunction
+            // 
+            this.pictureTJunction.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureTJunction.Image = global::KubePuzzleBuilder.Properties.Resources.T_Junction;
+            this.pictureTJunction.Location = new System.Drawing.Point(680, 360);
+            this.pictureTJunction.Name = "pictureTJunction";
+            this.pictureTJunction.Size = new System.Drawing.Size(50, 50);
+            this.pictureTJunction.TabIndex = 32;
+            this.pictureTJunction.TabStop = false;
+            this.pictureTJunction.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureTJunction_MouseMove);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label7.Location = new System.Drawing.Point(680, 8);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(50, 25);
+            this.label7.TabIndex = 34;
+            this.label7.Text = "Tiles";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label8.Location = new System.Drawing.Point(680, 424);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(57, 25);
+            this.label8.TabIndex = 35;
+            this.label8.Text = "Items";
+            // 
             // Kube
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(780, 957);
+            this.AutoScroll = true;
+            this.ClientSize = new System.Drawing.Size(780, 697);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.pictureTJunction);
             this.Controls.Add(this.btnExport);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.pictureCorner);
@@ -1785,6 +1836,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureFinish)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureStraight)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureCorner)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureTJunction)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1917,5 +1969,9 @@
         private Label label5;
         private PictureBox pictureCorner;
         private Button btnExport;
+        private Label label6;
+        private PictureBox pictureTJunction;
+        private Label label7;
+        private Label label8;
     }
 }
