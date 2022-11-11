@@ -32,22 +32,35 @@ namespace KubePuzzleBuilder
             return tiles[face - 1, number - 1];
         }
 
-        public void updateTileImage(string pictureID, int chosenPictureIndex, Label label)
+        public string updateTileImage(string pictureID, int chosenPictureIndex)
         {
             Tile tile = getTile(pictureID);
-            tile.setTileType(chosenPictureIndex);
+            tile.TileType = chosenPictureIndex;
             tile.resetTileOrientation();
-            label.Text = tile.print();
+            return tile.print();
         }
 
-        public void rotateTile(string pictureID, bool clockwise, Label label)
+        public string updateTileItem(string pictureID, ItemType itemType)
+        {
+            Tile tile = getTile(pictureID);
+            tile.Item = itemType;
+            return tile.print();
+        }
+
+        public string rotateTile(string pictureID, bool clockwise)
         {
             Tile tile = getTile(pictureID);
             if (clockwise)
                 tile.turnClockwise();
             else
                 tile.turnAntiClockwise();
-            label.Text = tile.print();
+            return tile.print();
+        }
+
+        public int getOrientation(string pictureID)
+        {
+            Tile tile = getTile(pictureID);
+            return tile.TileOrientation;
         }
 
         public string export()
@@ -61,9 +74,10 @@ namespace KubePuzzleBuilder
                     Tile tile = tiles[i, j];
                     
                     json += "\t{\n";
-                    json += "\t\t\"id\": " + tile.getID() + ",\n";
-                    json += "\t\t\"type\": " + tile.getTileType() + ",\n";
-                    json += "\t\t\"orientation\": " + tile.getTileOrientation() + "\n" ;
+                    json += "\t\t\"id\": " + tile.ID + ",\n";
+                    json += "\t\t\"type\": " + tile.TileType + ",\n";
+                    json += "\t\t\"orientation\": " + tile.TileOrientation + ",\n";
+                    json += "\t\t\"item\": \"" + tile.Item + "\"\n";
                     json += (i == 5 && j == 8)? "\t}\n" : "\t},\n";
                 }
             }

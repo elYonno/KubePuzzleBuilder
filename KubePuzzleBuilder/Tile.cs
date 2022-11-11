@@ -22,45 +22,38 @@ namespace KubePuzzleBuilder
 
     internal class Tile
     {
-        private readonly string id;
-        private int tileType = 0;
-        private int tileOrientation = 1;
-        private ItemType itemType = ItemType.NONE;
+        public string ID { get; }
+        public int TileType { get; set; } = 0;
+        public int TileOrientation { get; private set; } = 1;
+        public ItemType Item { get; set; } = ItemType.NONE;
 
-        public Tile(string id)
+        public Tile(string ID)
         {
-            this.id = id;
+            this.ID = ID;
         }
 
-        public string getID() { return id; }
 
-        public int getTileType() { return tileType; }
+        public void setItemType(ItemType itemType) { this.Item = itemType; }
 
-        public int getTileOrientation() { return tileOrientation; }
+        public ItemType getItemType() { return Item; }
 
-        public void setTileType(int tileType) { this.tileType = tileType; }
-
-        public void setItemType(ItemType itemType) { this.itemType = itemType; }
-
-        public ItemType getItemType() { return itemType; }
-
-        public void resetTileOrientation() { tileOrientation = 1; }
+        public void resetTileOrientation() { TileOrientation = 1; }
 
         public void turnClockwise()
         {
-            tileOrientation++;
-            if (tileOrientation > 4) tileOrientation = 1;
+            TileOrientation++;
+            if (TileOrientation > 4) TileOrientation = 1;
         }
 
         public void turnAntiClockwise()
         {
-            tileOrientation--;
-            if (tileOrientation < 1) tileOrientation = 4;
+            TileOrientation--;
+            if (TileOrientation < 1) TileOrientation = 4;
         }
 
         public string print()
         {
-            return Int32.Parse(id.Substring(1, 1)) + ": " + getTileType() + "," + getTileOrientation();
+            return int.Parse(ID.Substring(1, 1)) + " : " + TileType + "," + TileOrientation + (Item == ItemType.NONE? "" : "*");
         }
     }
 }
