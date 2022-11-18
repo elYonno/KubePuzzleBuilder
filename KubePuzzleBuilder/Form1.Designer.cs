@@ -59,7 +59,7 @@
             this.pictureConveyor = new System.Windows.Forms.PictureBox();
             this.label50 = new System.Windows.Forms.Label();
             this.pictureDelete = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelCube = new System.Windows.Forms.Panel();
             this.face1 = new System.Windows.Forms.GroupBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
@@ -174,6 +174,13 @@
             this.label45 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
             this.picture45 = new System.Windows.Forms.PictureBox();
+            this.label60 = new System.Windows.Forms.Label();
+            this.pictureDeadEnd = new System.Windows.Forms.PictureBox();
+            this.panelTiles = new System.Windows.Forms.Panel();
+            this.label71 = new System.Windows.Forms.Label();
+            this.pictureScissors = new System.Windows.Forms.PictureBox();
+            this.label70 = new System.Windows.Forms.Label();
+            this.pictureTrap = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBlank)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureStart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureFinish)).BeginInit();
@@ -188,7 +195,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureLever)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureConveyor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureDelete)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.panelCube.SuspendLayout();
             this.face1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picture19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture18)).BeginInit();
@@ -249,13 +256,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.picture44)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture41)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture45)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureDeadEnd)).BeginInit();
+            this.panelTiles.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureScissors)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureTrap)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBlank
             // 
             this.pictureBlank.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBlank.Image = global::KubePuzzleBuilder.Properties.Resources.Blank;
-            this.pictureBlank.Location = new System.Drawing.Point(616, 40);
+            this.pictureBlank.Location = new System.Drawing.Point(32, 32);
             this.pictureBlank.Name = "pictureBlank";
             this.pictureBlank.Size = new System.Drawing.Size(50, 50);
             this.pictureBlank.TabIndex = 18;
@@ -266,7 +277,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(616, 88);
+            this.label1.Location = new System.Drawing.Point(34, 81);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(53, 15);
             this.label1.TabIndex = 22;
@@ -275,7 +286,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(616, 152);
+            this.label2.Location = new System.Drawing.Point(34, 145);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(48, 15);
             this.label2.TabIndex = 24;
@@ -285,7 +296,7 @@
             // 
             this.pictureStart.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureStart.Image = global::KubePuzzleBuilder.Properties.Resources.Start;
-            this.pictureStart.Location = new System.Drawing.Point(616, 104);
+            this.pictureStart.Location = new System.Drawing.Point(32, 96);
             this.pictureStart.Name = "pictureStart";
             this.pictureStart.Size = new System.Drawing.Size(50, 50);
             this.pictureStart.TabIndex = 23;
@@ -296,7 +307,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(616, 216);
+            this.label3.Location = new System.Drawing.Point(34, 209);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(55, 15);
             this.label3.TabIndex = 26;
@@ -306,7 +317,7 @@
             // 
             this.pictureFinish.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureFinish.Image = global::KubePuzzleBuilder.Properties.Resources.Finish;
-            this.pictureFinish.Location = new System.Drawing.Point(616, 168);
+            this.pictureFinish.Location = new System.Drawing.Point(32, 160);
             this.pictureFinish.Name = "pictureFinish";
             this.pictureFinish.Size = new System.Drawing.Size(50, 50);
             this.pictureFinish.TabIndex = 25;
@@ -317,7 +328,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(608, 280);
+            this.label4.Location = new System.Drawing.Point(26, 273);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(65, 15);
             this.label4.TabIndex = 28;
@@ -328,7 +339,7 @@
             this.pictureStraight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureStraight.Image = global::KubePuzzleBuilder.Properties.Resources.Straight;
             this.pictureStraight.InitialImage = global::KubePuzzleBuilder.Properties.Resources.Straight;
-            this.pictureStraight.Location = new System.Drawing.Point(616, 232);
+            this.pictureStraight.Location = new System.Drawing.Point(32, 224);
             this.pictureStraight.Name = "pictureStraight";
             this.pictureStraight.Size = new System.Drawing.Size(50, 50);
             this.pictureStraight.TabIndex = 27;
@@ -339,7 +350,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(608, 344);
+            this.label5.Location = new System.Drawing.Point(26, 337);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(60, 15);
             this.label5.TabIndex = 30;
@@ -350,7 +361,7 @@
             this.pictureCorner.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureCorner.Image = global::KubePuzzleBuilder.Properties.Resources.Corner;
             this.pictureCorner.InitialImage = global::KubePuzzleBuilder.Properties.Resources.Corner;
-            this.pictureCorner.Location = new System.Drawing.Point(616, 296);
+            this.pictureCorner.Location = new System.Drawing.Point(32, 288);
             this.pictureCorner.Name = "pictureCorner";
             this.pictureCorner.Size = new System.Drawing.Size(50, 50);
             this.pictureCorner.TabIndex = 29;
@@ -360,9 +371,9 @@
             // 
             // btnExport
             // 
-            this.btnExport.Location = new System.Drawing.Point(648, 552);
+            this.btnExport.Location = new System.Drawing.Point(96, 528);
             this.btnExport.Name = "btnExport";
-            this.btnExport.Size = new System.Drawing.Size(80, 32);
+            this.btnExport.Size = new System.Drawing.Size(88, 32);
             this.btnExport.TabIndex = 31;
             this.btnExport.Text = "Export";
             this.btnExport.UseVisualStyleBackColor = true;
@@ -371,7 +382,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(600, 408);
+            this.label6.Location = new System.Drawing.Point(18, 401);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(78, 15);
             this.label6.TabIndex = 33;
@@ -381,7 +392,7 @@
             // 
             this.pictureTJunction.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureTJunction.Image = global::KubePuzzleBuilder.Properties.Resources.T_Junction;
-            this.pictureTJunction.Location = new System.Drawing.Point(616, 360);
+            this.pictureTJunction.Location = new System.Drawing.Point(32, 352);
             this.pictureTJunction.Name = "pictureTJunction";
             this.pictureTJunction.Size = new System.Drawing.Size(50, 50);
             this.pictureTJunction.TabIndex = 32;
@@ -393,7 +404,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(616, 8);
+            this.label7.Location = new System.Drawing.Point(34, 1);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(50, 25);
             this.label7.TabIndex = 34;
@@ -403,7 +414,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(688, 8);
+            this.label8.Location = new System.Drawing.Point(144, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(57, 25);
             this.label8.TabIndex = 35;
@@ -413,7 +424,7 @@
             // 
             this.pictureKey.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureKey.Image = global::KubePuzzleBuilder.Properties.Resources.GreenKey;
-            this.pictureKey.Location = new System.Drawing.Point(696, 104);
+            this.pictureKey.Location = new System.Drawing.Point(112, 96);
             this.pictureKey.Name = "pictureKey";
             this.pictureKey.Size = new System.Drawing.Size(50, 50);
             this.pictureKey.TabIndex = 36;
@@ -428,9 +439,9 @@
             this.keySelect.Items.AddRange(new object[] {
             "Green Key",
             "Yellow Key"});
-            this.keySelect.Location = new System.Drawing.Point(672, 144);
+            this.keySelect.Location = new System.Drawing.Point(96, 137);
             this.keySelect.Name = "keySelect";
-            this.keySelect.Size = new System.Drawing.Size(96, 23);
+            this.keySelect.Size = new System.Drawing.Size(80, 23);
             this.keySelect.TabIndex = 37;
             this.keySelect.SelectedIndexChanged += new System.EventHandler(this.keySelect_SelectedIndexChanged);
             // 
@@ -441,9 +452,9 @@
             this.lockSelect.Items.AddRange(new object[] {
             "Green Lock",
             "Yellow Lock"});
-            this.lockSelect.Location = new System.Drawing.Point(672, 208);
+            this.lockSelect.Location = new System.Drawing.Point(96, 201);
             this.lockSelect.Name = "lockSelect";
-            this.lockSelect.Size = new System.Drawing.Size(96, 23);
+            this.lockSelect.Size = new System.Drawing.Size(80, 23);
             this.lockSelect.TabIndex = 39;
             this.lockSelect.SelectedIndexChanged += new System.EventHandler(this.lockSelect_SelectedIndexChanged);
             // 
@@ -451,7 +462,7 @@
             // 
             this.pictureLock.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureLock.Image = global::KubePuzzleBuilder.Properties.Resources.GreenLock;
-            this.pictureLock.Location = new System.Drawing.Point(696, 168);
+            this.pictureLock.Location = new System.Drawing.Point(112, 160);
             this.pictureLock.Name = "pictureLock";
             this.pictureLock.Size = new System.Drawing.Size(50, 50);
             this.pictureLock.TabIndex = 38;
@@ -463,7 +474,7 @@
             // 
             this.pictureButton.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureButton.Image = global::KubePuzzleBuilder.Properties.Resources.PurpleButton;
-            this.pictureButton.Location = new System.Drawing.Point(696, 232);
+            this.pictureButton.Location = new System.Drawing.Point(112, 224);
             this.pictureButton.Name = "pictureButton";
             this.pictureButton.Size = new System.Drawing.Size(50, 50);
             this.pictureButton.TabIndex = 40;
@@ -474,7 +485,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(696, 280);
+            this.label9.Location = new System.Drawing.Point(114, 273);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(43, 15);
             this.label9.TabIndex = 41;
@@ -483,7 +494,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(704, 344);
+            this.label10.Location = new System.Drawing.Point(122, 337);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(31, 15);
             this.label10.TabIndex = 43;
@@ -493,7 +504,7 @@
             // 
             this.pictureGate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureGate.Image = global::KubePuzzleBuilder.Properties.Resources.PurpleGate;
-            this.pictureGate.Location = new System.Drawing.Point(696, 296);
+            this.pictureGate.Location = new System.Drawing.Point(112, 288);
             this.pictureGate.Name = "pictureGate";
             this.pictureGate.Size = new System.Drawing.Size(50, 50);
             this.pictureGate.TabIndex = 42;
@@ -504,7 +515,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(704, 411);
+            this.label20.Location = new System.Drawing.Point(122, 404);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(38, 15);
             this.label20.TabIndex = 45;
@@ -514,7 +525,7 @@
             // 
             this.picturePortal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picturePortal.Image = global::KubePuzzleBuilder.Properties.Resources.Portal;
-            this.picturePortal.Location = new System.Drawing.Point(696, 363);
+            this.picturePortal.Location = new System.Drawing.Point(112, 352);
             this.picturePortal.Name = "picturePortal";
             this.picturePortal.Size = new System.Drawing.Size(50, 50);
             this.picturePortal.TabIndex = 44;
@@ -525,7 +536,7 @@
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(704, 472);
+            this.label30.Location = new System.Drawing.Point(122, 465);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(35, 15);
             this.label30.TabIndex = 47;
@@ -535,7 +546,7 @@
             // 
             this.pictureLever.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureLever.Image = global::KubePuzzleBuilder.Properties.Resources.Lever;
-            this.pictureLever.Location = new System.Drawing.Point(696, 424);
+            this.pictureLever.Location = new System.Drawing.Point(114, 417);
             this.pictureLever.Name = "pictureLever";
             this.pictureLever.Size = new System.Drawing.Size(50, 50);
             this.pictureLever.TabIndex = 46;
@@ -546,7 +557,7 @@
             // label40
             // 
             this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(696, 536);
+            this.label40.Location = new System.Drawing.Point(192, 144);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(58, 15);
             this.label40.TabIndex = 49;
@@ -556,7 +567,7 @@
             // 
             this.pictureConveyor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureConveyor.Image = global::KubePuzzleBuilder.Properties.Resources.Conveyor;
-            this.pictureConveyor.Location = new System.Drawing.Point(696, 488);
+            this.pictureConveyor.Location = new System.Drawing.Point(192, 96);
             this.pictureConveyor.Name = "pictureConveyor";
             this.pictureConveyor.Size = new System.Drawing.Size(50, 50);
             this.pictureConveyor.TabIndex = 48;
@@ -567,7 +578,7 @@
             // label50
             // 
             this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(704, 88);
+            this.label50.Location = new System.Drawing.Point(162, 81);
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(40, 15);
             this.label50.TabIndex = 51;
@@ -577,7 +588,7 @@
             // 
             this.pictureDelete.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureDelete.Image = global::KubePuzzleBuilder.Properties.Resources.Delete;
-            this.pictureDelete.Location = new System.Drawing.Point(696, 40);
+            this.pictureDelete.Location = new System.Drawing.Point(152, 32);
             this.pictureDelete.Name = "pictureDelete";
             this.pictureDelete.Size = new System.Drawing.Size(50, 50);
             this.pictureDelete.TabIndex = 50;
@@ -585,19 +596,20 @@
             this.pictureDelete.Tag = "0";
             this.pictureDelete.MouseMove += new System.Windows.Forms.MouseEventHandler(this.item_MouseMove);
             // 
-            // panel1
+            // panelCube
             // 
-            this.panel1.AutoScroll = true;
-            this.panel1.Controls.Add(this.face1);
-            this.panel1.Controls.Add(this.face6);
-            this.panel1.Controls.Add(this.face5);
-            this.panel1.Controls.Add(this.face2);
-            this.panel1.Controls.Add(this.face3);
-            this.panel1.Controls.Add(this.face4);
-            this.panel1.Location = new System.Drawing.Point(8, 8);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(584, 584);
-            this.panel1.TabIndex = 52;
+            this.panelCube.AutoScroll = true;
+            this.panelCube.Controls.Add(this.face1);
+            this.panelCube.Controls.Add(this.face6);
+            this.panelCube.Controls.Add(this.face5);
+            this.panelCube.Controls.Add(this.face2);
+            this.panelCube.Controls.Add(this.face3);
+            this.panelCube.Controls.Add(this.face4);
+            this.panelCube.Location = new System.Drawing.Point(8, 8);
+            this.panelCube.MinimumSize = new System.Drawing.Size(584, 584);
+            this.panelCube.Name = "panelCube";
+            this.panelCube.Size = new System.Drawing.Size(584, 584);
+            this.panelCube.TabIndex = 52;
             // 
             // face1
             // 
@@ -1955,44 +1967,123 @@
             this.picture45.DragDrop += new System.Windows.Forms.DragEventHandler(this.picture_DragDrop);
             this.picture45.DragEnter += new System.Windows.Forms.DragEventHandler(this.picture_DragEnter);
             // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Location = new System.Drawing.Point(18, 465);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(74, 15);
+            this.label60.TabIndex = 54;
+            this.label60.Text = "6 - Dead End";
+            // 
+            // pictureDeadEnd
+            // 
+            this.pictureDeadEnd.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureDeadEnd.Image = global::KubePuzzleBuilder.Properties.Resources.DeadEnd;
+            this.pictureDeadEnd.Location = new System.Drawing.Point(32, 416);
+            this.pictureDeadEnd.Name = "pictureDeadEnd";
+            this.pictureDeadEnd.Size = new System.Drawing.Size(50, 50);
+            this.pictureDeadEnd.TabIndex = 53;
+            this.pictureDeadEnd.TabStop = false;
+            this.pictureDeadEnd.Tag = "6";
+            this.pictureDeadEnd.MouseMove += new System.Windows.Forms.MouseEventHandler(this.picture_MouseMove);
+            // 
+            // panelTiles
+            // 
+            this.panelTiles.Controls.Add(this.label71);
+            this.panelTiles.Controls.Add(this.pictureScissors);
+            this.panelTiles.Controls.Add(this.btnExport);
+            this.panelTiles.Controls.Add(this.label70);
+            this.panelTiles.Controls.Add(this.pictureTrap);
+            this.panelTiles.Controls.Add(this.keySelect);
+            this.panelTiles.Controls.Add(this.label7);
+            this.panelTiles.Controls.Add(this.label60);
+            this.panelTiles.Controls.Add(this.pictureBlank);
+            this.panelTiles.Controls.Add(this.pictureDeadEnd);
+            this.panelTiles.Controls.Add(this.label1);
+            this.panelTiles.Controls.Add(this.pictureStart);
+            this.panelTiles.Controls.Add(this.label50);
+            this.panelTiles.Controls.Add(this.label2);
+            this.panelTiles.Controls.Add(this.pictureDelete);
+            this.panelTiles.Controls.Add(this.pictureFinish);
+            this.panelTiles.Controls.Add(this.label40);
+            this.panelTiles.Controls.Add(this.label3);
+            this.panelTiles.Controls.Add(this.pictureConveyor);
+            this.panelTiles.Controls.Add(this.pictureStraight);
+            this.panelTiles.Controls.Add(this.label30);
+            this.panelTiles.Controls.Add(this.label4);
+            this.panelTiles.Controls.Add(this.pictureLever);
+            this.panelTiles.Controls.Add(this.pictureCorner);
+            this.panelTiles.Controls.Add(this.label20);
+            this.panelTiles.Controls.Add(this.label5);
+            this.panelTiles.Controls.Add(this.picturePortal);
+            this.panelTiles.Controls.Add(this.pictureTJunction);
+            this.panelTiles.Controls.Add(this.label10);
+            this.panelTiles.Controls.Add(this.label6);
+            this.panelTiles.Controls.Add(this.pictureGate);
+            this.panelTiles.Controls.Add(this.label8);
+            this.panelTiles.Controls.Add(this.label9);
+            this.panelTiles.Controls.Add(this.pictureKey);
+            this.panelTiles.Controls.Add(this.pictureButton);
+            this.panelTiles.Controls.Add(this.lockSelect);
+            this.panelTiles.Controls.Add(this.pictureLock);
+            this.panelTiles.Location = new System.Drawing.Point(598, 8);
+            this.panelTiles.MaximumSize = new System.Drawing.Size(274, 584);
+            this.panelTiles.MinimumSize = new System.Drawing.Size(274, 584);
+            this.panelTiles.Name = "panelTiles";
+            this.panelTiles.Size = new System.Drawing.Size(274, 584);
+            this.panelTiles.TabIndex = 55;
+            // 
+            // label71
+            // 
+            this.label71.AutoSize = true;
+            this.label71.Location = new System.Drawing.Point(192, 272);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(48, 15);
+            this.label71.TabIndex = 58;
+            this.label71.Text = "Scissors";
+            // 
+            // pictureScissors
+            // 
+            this.pictureScissors.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureScissors.Image = global::KubePuzzleBuilder.Properties.Resources.Scissors;
+            this.pictureScissors.Location = new System.Drawing.Point(192, 224);
+            this.pictureScissors.Name = "pictureScissors";
+            this.pictureScissors.Size = new System.Drawing.Size(50, 50);
+            this.pictureScissors.TabIndex = 57;
+            this.pictureScissors.TabStop = false;
+            this.pictureScissors.Tag = "11";
+            this.pictureScissors.MouseMove += new System.Windows.Forms.MouseEventHandler(this.item_MouseMove);
+            // 
+            // label70
+            // 
+            this.label70.AutoSize = true;
+            this.label70.Location = new System.Drawing.Point(200, 208);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(29, 15);
+            this.label70.TabIndex = 56;
+            this.label70.Text = "Trap";
+            // 
+            // pictureTrap
+            // 
+            this.pictureTrap.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureTrap.Image = global::KubePuzzleBuilder.Properties.Resources.Trap;
+            this.pictureTrap.Location = new System.Drawing.Point(192, 160);
+            this.pictureTrap.Name = "pictureTrap";
+            this.pictureTrap.Size = new System.Drawing.Size(50, 50);
+            this.pictureTrap.TabIndex = 55;
+            this.pictureTrap.TabStop = false;
+            this.pictureTrap.Tag = "10";
+            this.pictureTrap.MouseMove += new System.Windows.Forms.MouseEventHandler(this.item_MouseMove);
+            // 
             // Kube
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(780, 607);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label50);
-            this.Controls.Add(this.pictureDelete);
-            this.Controls.Add(this.label40);
-            this.Controls.Add(this.pictureConveyor);
-            this.Controls.Add(this.label30);
-            this.Controls.Add(this.pictureLever);
-            this.Controls.Add(this.label20);
-            this.Controls.Add(this.picturePortal);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.pictureGate);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.pictureButton);
-            this.Controls.Add(this.lockSelect);
-            this.Controls.Add(this.pictureLock);
-            this.Controls.Add(this.keySelect);
-            this.Controls.Add(this.pictureKey);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.pictureTJunction);
-            this.Controls.Add(this.btnExport);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.pictureCorner);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.pictureStraight);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.pictureFinish);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.pictureStart);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBlank);
+            this.ClientSize = new System.Drawing.Size(880, 597);
+            this.Controls.Add(this.panelTiles);
+            this.Controls.Add(this.panelCube);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.Name = "Kube";
@@ -2012,7 +2103,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureLever)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureConveyor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureDelete)).EndInit();
-            this.panel1.ResumeLayout(false);
+            this.panelCube.ResumeLayout(false);
             this.face1.ResumeLayout(false);
             this.face1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picture19)).EndInit();
@@ -2079,8 +2170,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.picture44)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture41)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture45)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureDeadEnd)).EndInit();
+            this.panelTiles.ResumeLayout(false);
+            this.panelTiles.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureScissors)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureTrap)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -2116,7 +2211,7 @@
         private PictureBox pictureConveyor;
         private Label label50;
         private PictureBox pictureDelete;
-        private Panel panel1;
+        private Panel panelCube;
         private PictureBox picture65;
         private Label label62;
         private Label label65;
@@ -2231,5 +2326,12 @@
         private Label label19;
         private Label label13;
         private GroupBox face1;
+        private Label label60;
+        private PictureBox pictureDeadEnd;
+        private Panel panelTiles;
+        private Label label70;
+        private PictureBox pictureTrap;
+        private Label label71;
+        private PictureBox pictureScissors;
     }
 }

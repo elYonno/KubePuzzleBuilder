@@ -17,7 +17,9 @@ namespace KubePuzzleBuilder
         GATE,
         PORTAL,
         LEVER,
-        CONVEYOR
+        CONVEYOR,
+        TRAP,
+        SCISSORS
     };
 
     internal class Tile
